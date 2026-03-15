@@ -1,0 +1,39 @@
+{
+    "name": "Wingman/Cortex",
+    "version": "1.0.0",
+    "type": "library",
+    "description": "A configuration management system providing hierarchical, namespace-scoped key stores, a rich query language, string interpolation, file loading with pluggable parsers, and a named-environment registry for the Wingman framework.",
+    "authors": [
+        {
+            "name": "Angel Politis",
+            "email": "info@angelpolitis.com"
+        }
+    ],
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/angelpolitis/Wingman-Cortex.git"
+    },
+    "homepage": "https://github.com/angelpolitis/Wingman-Cortex",
+    "php": ">=8.1",
+    "dependencies": [
+        {
+            "package": "Wingman/Corvus",
+            "version": ">=1.0",
+            "optional": true
+        },
+        {
+            "package": "Wingman/Verix",
+            "version": ">=1.0",
+            "optional": true
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Wingman.Cortex.": "src/"
+        },
+        "files": [
+            "autoload.php"
+        ]
+    }
+}

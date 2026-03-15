@@ -1,0 +1,28 @@
+{
+    "name": "wingman/cortex",
+    "type": "library",
+    "description": "A configuration management system providing hierarchical, namespace-scoped key stores, a rich query language, string interpolation, file loading with pluggable parsers, and a named-environment registry for the Wingman framework.",
+    "keywords": ["php", "configuration", "config", "environment", "env", "settings", "interpolation", "wingman"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Angel Politis",
+            "email": "info@angelpolitis.com"
+        }
+    ],
+    "require": {
+        "php": ">=8.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Wingman\\Cortex\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Wingman\\Cortex\\Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
