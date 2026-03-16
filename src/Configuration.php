@@ -3,7 +3,7 @@
 	 * Project Name:    Wingman — Cortex — Configuration
 	 * Created by:      Angel Politis
 	 * Creation Date:   Jan 27 2026
-	 * Last Modified:   Mar 14 2026
+	 * Last Modified:   Mar 17 2026
     /*/
 
     # Use the Cortex namespace.
@@ -441,12 +441,17 @@
         }
 
         /**
-         * Returns a named configuration from the registry.
-         * Delegates to `ConfigurationRegistry::get()`.
+         * Returns a named configuration from the registry. When `$name` is `null` and no default
+         * configuration has been registered yet, one is created and registered automatically so
+         * that callers can start reading and writing without an explicit `create()` call.
+         * Named lookups still return `null` when the requested name is not registered.
          * @param string|null $name The name to look up; `null` resolves to `DEFAULT_NAME`.
          * @return static|null The configuration, or `null` if not registered.
          */
         public static function find (?string $name = null) : ?static {
+            if ($name === null && !ConfigurationRegistry::exists()) {
+                new static(static::DEFAULT_NAME);
+            }
             return ConfigurationRegistry::get($name);
         }
 

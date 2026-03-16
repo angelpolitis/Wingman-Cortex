@@ -1,4 +1,4 @@
-# Cortex
+# Wingman — Cortex
 
 Cortex is the configuration engine for the Wingman framework. It provides a
 namespace-scoped hierarchical key-value store with lazy loading, string
@@ -84,4 +84,8 @@ foreach ($config("server") as $key => $value) {
 
 ## Licence
 
-MIT — see [LICENSE](LICENSE).
+This project is licensed under the **Mozilla Public License 2.0 (MPL 2.0)**.
+
+Wingman Cortex is part of the **Wingman Framework**, Copyright (c) 2023–2026 Angel Politis.
+
+For the full licence text, please see the [LICENSE](LICENSE) file.

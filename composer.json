@@ -3,7 +3,7 @@
     "type": "library",
     "description": "A configuration management system providing hierarchical, namespace-scoped key stores, a rich query language, string interpolation, file loading with pluggable parsers, and a named-environment registry for the Wingman framework.",
     "keywords": ["php", "configuration", "config", "environment", "env", "settings", "interpolation", "wingman"],
-    "license": "MIT",
+    "license": "MPL-2.0",
     "authors": [
         {
             "name": "Angel Politis",
